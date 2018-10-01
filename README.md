@@ -1,6 +1,8 @@
 # Automatizar-Backups-FTPES-PowerShell
 PowerShell - Automatizar Backups FTPES con WinSCP y Compress-7Zip (2018)
 
+Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ftps-winscp-taskschd.html
+
 instalar-modulos.ps1: Es necesario instalar los módulos: WinSCP y Compress-7Zip
 
 - 1. Se establecen las variables
@@ -28,5 +30,3 @@ backup.ps1: establecer los valores deseados en las variables
 # Asunto y cuerpo del Email
 - $asuntoEmail = "asuntoEmail"
 - $cuerpoEmail = "textoCuerpoEmail"
-
-Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ftps-winscp-taskschd.html
