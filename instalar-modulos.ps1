@@ -2,9 +2,9 @@
 # Autor @adrianlois_ #
 ######################
 
-# Quitar restricciones de ejecuciÃ³n de scripts
+# Quitar restricciones de ejecución de scripts
 Set-ExecutionPolicy Unrestricted -scope LocalMachine -Force
 
-# InstalaciÃ³n de mÃ³dulos 7Zip4Powershell y WinSCP.
+# Instalación de módulos 7Zip4Powershell y WinSCP.
 Install-Module -Name 7Zip4Powershell -Verbose -Force
 Install-Module -Name WinSCP -Verbose -Force
