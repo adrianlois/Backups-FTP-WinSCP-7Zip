@@ -32,7 +32,7 @@
 # Asunto y cuerpo del Email
     $asuntoEmail = "asuntoEmail"
     $cuerpoEmail = "textoCuerpoEmail"
-# Get-Credencial automatizado no interactivo, converitr a string segura
+# Get-Credencial automatizado no interactivo, convertir a string segura
     $secPasswdFTP = ConvertTo-SecureString $passwdFTP -AsPlainText -Force
     $credencialesFTP = New-Object System.Management.Automation.PSCredential ($usuarioFTP, $secPasswdFTP)
     $secPasswdEmail = ConvertTo-SecureString $passwdEmail -AsPlainText -Force
