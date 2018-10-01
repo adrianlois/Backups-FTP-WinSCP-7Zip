@@ -1,4 +1,4 @@
-﻿#####################
+#####################
 # Autor @adrianlois_
 #####################
 
@@ -27,7 +27,7 @@
     $passwdFTP = "passwdFTP"
     $passwd7z = "passwdFichero7z"
     $servidorFTP = "ftp.miweb.com"
-	$usuarioEmail = "usuarioEmail@gmail.com" 
+    $usuarioEmail = "usuarioEmail@gmail.com" 
     $passwdEmail = "passwdEmail"
 # Asunto y cuerpo del Email
     $asuntoEmail = "asuntoEmail"
