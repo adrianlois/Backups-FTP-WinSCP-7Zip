@@ -3,30 +3,30 @@ PowerShell - Automatizar Backups FTPES con WinSCP y Compress-7Zip (2018)
 
 Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ftps-winscp-taskschd.html
 
-instalar-modulos.ps1: Es necesario instalar los módulos: WinSCP y Compress-7Zip
+> instalar-modulos.ps1: Es necesario instalar los módulos: WinSCP y Compress-7Zip
 - WinSCP: https://github.com/dotps1/WinSCP/wiki/New-WinSCPSession
 - Compress-7Zip: https://www.powershellgallery.com/packages/7Zip4Powershell/1.8.0
 
-# Procedimientos
-- 1. Se establecen las variables
-- 2. Se comprimen los datos en un único fichero comprimido temporal
-- 3. Se envía el fichero comprimido a un servidor FTP de modo seguro
-- 4. Se genera un único log de las acciones realizadas
-- 5. Se envía el log por correo vía Gmail
-- 6. Se eliminan los temporales creados en el proceso
+## Procedimientos
+1. Se establecen las variables
+2. Se comprimen los datos en un único fichero comprimido temporal
+3. Se envía el fichero comprimido a un servidor FTP de modo seguro
+4. Se genera un único log de las acciones realizadas
+5. Se envía el log por correo vía Gmail
+6. Se eliminan los temporales creados en el proceso
 
-# Envío log cuenta Gmail (Google)
+### Envío log cuenta Gmail (Google)
 Para el envío del log vía Gmail es necesario activar el acceso a "Aplicaciones menos seguras" en la cuenta Google. 
 https://myaccount.google.com/lesssecureapps
 
--- backup.ps1: establecer los valores deseados en las variables
+> backup.ps1: establecer los valores deseados en las variables
 
-# Paths
+#### Paths
 - $pathLocalDatos = "pathLocalDatos"
 - $pathRemotoFTP = "pathRemotoFTP"
 - $pathTempFichero7z = "pathTemporalFichero7z"
 
-# Credenciales
+#### Credenciales
 - $usuarioFTP = "usuarioFTP"
 - $passwdFTP = "passwdFTP"
 - $passwd7z = "passwdFichero7z"
@@ -34,6 +34,6 @@ https://myaccount.google.com/lesssecureapps
 - $usuarioEmail = "usuarioEmail@gmail.com" 
 - $passwdEmail = "passwdEmail"
 
-# Asunto y cuerpo del Email
+#### Asunto y cuerpo del Email
 - $asuntoEmail = "asuntoEmail"
 - $cuerpoEmail = "textoCuerpoEmail"
