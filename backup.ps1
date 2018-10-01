@@ -1,6 +1,6 @@
-#####################
-# Autor @adrianlois_
-#####################
+######################
+# Autor @adrianlois_ #
+######################
 
 ## Inicio Prerequisitos ##
 # En caso necesario, descomentar las líneas 6, 9 y 10. O ejecutarlas a parte en Windows Powershell como Administrador.
