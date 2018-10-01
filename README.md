@@ -3,7 +3,7 @@ PowerShell - Automatizar Backups FTPES con WinSCP y Compress-7Zip (2018)
 
 Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ftps-winscp-taskschd.html
 
-> instalar-modulos.ps1: Es necesario instalar los módulos: WinSCP y Compress-7Zip
+> **instalar-modulos.ps1**: Es necesario instalar los módulos: WinSCP y Compress-7Zip
 - WinSCP: https://github.com/dotps1/WinSCP/wiki/New-WinSCPSession
 - Compress-7Zip: https://www.powershellgallery.com/packages/7Zip4Powershell/1.8.0
 
@@ -19,7 +19,9 @@ Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ft
 Para el envío del log vía Gmail es necesario activar el acceso a "Aplicaciones menos seguras" en la cuenta Google. 
 https://myaccount.google.com/lesssecureapps
 
-> backup.ps1: establecer los valores deseados en las variables
+![Aplicaciones menos seguras Google](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTPES-Batchfile/master/screenshots-test/ejecucion_app_menos_seguras_gmail.png)
+
+> **backup.ps1**: establecer los valores deseados en las variables
 
 #### Paths
 - $pathLocalDatos = "pathLocalDatos"
