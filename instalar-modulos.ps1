@@ -1,6 +1,6 @@
-﻿#####################
-# Autor @adrianlois_
-#####################
+######################
+# Autor @adrianlois_ #
+######################
 
 # Quitar restricciones de ejecución de scripts
 Set-ExecutionPolicy Unrestricted -scope LocalMachine -Force
