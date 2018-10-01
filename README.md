@@ -15,7 +15,11 @@ instalar-modulos.ps1: Es necesario instalar los módulos: WinSCP y Compress-7Zip
 - 5. Se envía el log por correo vía Gmail
 - 6. Se eliminan los temporales creados en el proceso
 
-backup.ps1: establecer los valores deseados en las variables
+# Envío log cuenta Gmail (Google)
+Para el envío del log vía Gmail es necesario activar el acceso a "Aplicaciones menos seguras" en la cuenta Google. 
+https://myaccount.google.com/lesssecureapps
+
+-- backup.ps1: establecer los valores deseados en las variables
 
 # Paths
 - $pathLocalDatos = "pathLocalDatos"
