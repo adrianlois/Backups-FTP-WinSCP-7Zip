@@ -1,7 +1,7 @@
 # Automatizar-Backups-FTPES-PowerShell
 PowerShell - Automatizar Backups FTPES con WinSCP y Compress-7Zip (2018)
 
-instalar-modulos.ps1: Es necesario instalar los módulos WinSCP y Compress-7Zip
+instalar-modulos.ps1: Es necesario instalar los módulos: WinSCP y Compress-7Zip
 
 - 1. Se establecen las variables
 - 2. Se comprimen los datos en un único fichero comprimido temporal
