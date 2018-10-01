@@ -11,11 +11,9 @@
 # Instalación de módulos 7Zip4Powershell y WinSCP.
 # Install-Module -Name 7Zip4Powershell -Verbose -Force
 # Install-Module -Name WinSCP -Verbose -Force
-
 ## Fin Prerequisitos ##
 
 ## Inicio Variables ##
-
 # Fecha y hora
     $fechaActual = Get-Date -uformat "%d-%m-%Y"
     $fechaHoraActual = Get-Date -uformat "%d/%m/%Y - %H:%M:%S"
@@ -44,7 +42,6 @@
 # Comprobaciones Test-Path
     $testBackup7z = "$pathTempFichero7z*.7z"
     $testBackupLog = "$pathTempFichero7z*.log"
-
 ## Fin Varibles ##
 
 # Comprobrar si ya existe algún fichero de log o backup anteriores
