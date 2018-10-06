@@ -15,57 +15,57 @@
 
 ## Inicio Variables ##
 # Fecha y hora
-    $fechaActual = Get-Date -uformat "%d-%m-%Y"
-    $fechaHoraActual = Get-Date -uformat "%d/%m/%Y - %H:%M:%S"
+    $FechaActual = Get-Date -uformat "%d-%m-%Y"
+    $FechaHoraActual = Get-Date -uformat "%d/%m/%Y - %H:%M:%S"
 # Paths
-    $pathLocalDatos = "pathLocalDatos"
-    $pathRemotoFTP = "pathRemotoFTP"
-    $pathTempFichero7z = "pathTemporalFichero7z"
-    $tempFichero7z = "$pathtempFichero7z-$fechaActual.7z"
+    $PathLocalDatos = "PathLocalDatos"
+    $PathRemotoFTP = "PathRemotoFTP"
+    $PathTempFichero7z = "PathTemporalFichero7z"
+    $TempFichero7z = "$PathtempFichero7z-$FechaActual.7z"
 # Credenciales
-    $usuarioFTP = "usuarioFTP"
-    $passwdFTP = "passwdFTP"
-    $passwd7z = "passwdFichero7z"
-    $servidorFTP = "ftp.miweb.com"
-    $usuarioEmail = "usuarioEmail@gmail.com" 
-    $passwdEmail = "passwdEmail"
+    $UsuarioFTP = "UsuarioFTP"
+    $PasswdFTP = "PasswdFTP"
+    $Passwd7z = "PasswdFichero7z"
+    $ServidorFTP = "ftp.miweb.com"
+    $UsuarioEmail = "UsuarioEmail@gmail.com" 
+    $PasswdEmail = "PasswdEmail"
 # Asunto y cuerpo del Email
-    $asuntoEmail = "asuntoEmail"
-    $cuerpoEmail = "textoCuerpoEmail"
+    $AsuntoEmail = "AsuntoEmail"
+    $CuerpoEmail = "TextoCuerpoEmail"
 # Get-Credencial automatizado no interactivo, convertir a string segura
-    $secPasswdFTP = ConvertTo-SecureString $passwdFTP -AsPlainText -Force
-    $credencialesFTP = New-Object System.Management.Automation.PSCredential ($usuarioFTP, $secPasswdFTP)
-    $secPasswdEmail = ConvertTo-SecureString $passwdEmail -AsPlainText -Force
-    $credencialesEmail = New-Object System.Management.Automation.PSCredential ($usuarioEmail, $secPasswdEMail)
+    $SecPasswdFTP = ConvertTo-SecureString $passwdFTP -AsPlainText -Force
+    $CredencialesFTP = New-Object System.Management.Automation.PSCredential ($UsuarioFTP, $SecPasswdFTP)
+    $SecPasswdEmail = ConvertTo-SecureString $passwdEmail -AsPlainText -Force
+    $CredencialesEmail = New-Object System.Management.Automation.PSCredential ($UsuarioEmail, $SecPasswdEMail)
 # Log
-    $logBackupFTP = "$pathtempFichero7z-$fechaActual.log"
+    $LogBackupFTP = "$PathtempFichero7z-$FechaActual.log"
 # Comprobaciones Test-Path
-    $testBackup7z = "$pathTempFichero7z*.7z"
-    $testBackupLog = "$pathTempFichero7z*.log"
+    $TestBackup7z = "$PathTempFichero7z*.7z"
+    $TestBackupLog = "$PathTempFichero7z*.log"
 ## Fin Varibles ##
 
 # Comprobrar si ya existe algún fichero de log o backup anteriores
-if (Test-Path ($testBackup7z, $testBackupLog)) { 
-    Remove-Item -Path ($testBackup7z, $testBackupLog) -Recurse -Force 
+if (Test-Path ($TestBackup7z, $TestBackupLog)) { 
+    Remove-Item -Path ($TestBackup7z, $TestBackupLog) -Recurse -Force 
     }
 
 ## Compresión de datos ##
-Compress-7Zip -Path $pathLocalDatos -ArchiveFileName $tempFichero7z -Password $passwd7z -EncryptFilenames
+Compress-7Zip -Path $pathLocalDatos -ArchiveFileName $TempFichero7z -Password $Passwd7z -EncryptFilenames
 
 ## Enviar backup al servidor FTP ##
     # Crear nueva sesión FTP
-    New-WinSCPSession -SessionOption (New-WinSCPSessionOption -HostName $servidorFTP -Protocol Ftp -Credential $credencialesFTP) -SessionLogPath $logBackupFTP -DebugLogLevel 2
+    New-WinSCPSession -SessionOption (New-WinSCPSessionOption -HostName $ServidorFTP -Protocol Ftp -Credential $CredencialesFTP) -SessionLogPath $LogBackupFTP -DebugLogLevel 2
     # Subir el fichero comprimido de datos al servidor FTP
-    Send-WinSCPItem -LocalPath $tempFichero7z -RemotePath $pathRemotoFTP
+    Send-WinSCPItem -LocalPath $TempFichero7z -RemotePath $PathRemotoFTP
     # Cerrar sesión FTP
     Remove-WinSCPSession
 
 ## Enviar log de backup vía email Gmail ##
-Send-MailMessage -From $usuarioEmail -To $usuarioEmail -Subject "$asuntoEmail - $fechaHoraActual" -Body "$cuerpoEmail - $fechaHoraActual" -Attachments $logBackupFTP -SmtpServer smtp.gmail.com -UseSsl -Credential $credencialesEmail
+Send-MailMessage -From $UsuarioEmail -To $UsuarioEmail -Subject "$AsuntoEmail - $FechaHoraActual" -Body "$CuerpoEmail - $FechaHoraActual" -Attachments $LogBackupFTP -SmtpServer smtp.gmail.com -UseSsl -Credential $CredencialesEmail
 
 ## Eliminar logs ##
 # Conservar el fichero de log, eliminar solo el fichero temporal backup 7z
-Remove-Item -Path $tempFichero7z -Recurse -Force
+Remove-Item -Path $TempFichero7z -Recurse -Force
 # En el caso de querer eliminar también el log de backup, descomentar la siguiente línea
 # Remove-Item -Path $logBackupFTP -Recurse -Force
 
