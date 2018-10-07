@@ -24,9 +24,9 @@
     $TempFichero7z = "$PathtempFichero7z-$FechaActual.7z"
 # Credenciales
     $Passwd7z = "PasswdFichero7z"
+    $ServidorFTP = "ftp.miweb.com"
     $UsuarioFTP = "UsuarioFTP"
     $PasswdFTP = "PasswdFTP"
-    $ServidorFTP = "ftp.miweb.com"
     $UsuarioEmail = "UsuarioEmail@gmail.com" 
     $PasswdEmail = "PasswdEmail"
 # Asunto y cuerpo del Email
