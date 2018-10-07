@@ -14,7 +14,7 @@
     $PathLocalDatos = "PathLocalDatos"
     $PathRemotoFTP = "PathRemotoFTP"
     $PathTempFichero7z = "PathTemporalFichero7z"
-    $NombreBackupTemp = "Backup-"
+    $NombreBackupTemp = "Backup_"
     $TempFichero7z = "$PathtempFichero7z$NombreBackupTemp$FechaActual.7z"
 # Credenciales
     $Passwd7z = "PasswdFichero7z"
