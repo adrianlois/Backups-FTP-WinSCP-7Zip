@@ -29,10 +29,10 @@ https://myaccount.google.com/lesssecureapps
 - $pathTempFichero7z = "pathTemporalFichero7z"
 
 #### Credenciales
-- $usuarioFTP = "usuarioFTP"
-- $passwdFTP = "passwdFTP"
 - $passwd7z = "passwdFichero7z"
 - $servidorFTP = "ftp.miweb.com"
+- $usuarioFTP = "usuarioFTP"
+- $passwdFTP = "passwdFTP"
 - $usuarioEmail = "usuarioEmail@gmail.com" 
 - $passwdEmail = "passwdEmail"
 
