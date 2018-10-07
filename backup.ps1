@@ -2,7 +2,7 @@
 # Autor @adrianlois_ #
 ######################
 
-## Inicio Variables ##
+## Inicio Establecer Variables ##
 # Fecha y hora
     $FechaActual = Get-Date -uformat "%d-%m-%Y"
     $FechaHoraActual = Get-Date -uformat "%d/%m/%Y - %H:%M:%S"
@@ -31,7 +31,7 @@
 # Comprobaciones Test-Path
     $TestBackup7z = "$PathTempFichero7z*.7z"
     $TestBackupLog = "$PathTempFichero7z*.log"
-## Fin Varibles ##
+## Fin Establecer Varibles ##
 
 # Comprobrar si ya existe algún fichero de log o backup anteriores
 if (Test-Path ($TestBackup7z, $TestBackupLog)) { 
