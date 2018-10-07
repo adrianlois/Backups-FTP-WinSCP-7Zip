@@ -36,7 +36,7 @@ $LeerPasswdEmail = Read-Host -AsSecureString "Establecer la password del e-mail 
     $PathLocalDatos = "PathLocalDatos"
     $PathRemotoFTP = "PathRemotoFTP"
     $PathTempFichero7z = "PathTempFichero7z"
-    $NombreBackupTemp = "Backup-"
+    $NombreBackupTemp = "Backup_"
     $TempFichero7z = "$PathtempFichero7z$NombreBackupTemp$FechaActual.7z"
 # Credenciales
     $Passwd7z = "$PlainPasswd7z"
