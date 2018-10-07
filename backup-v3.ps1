@@ -154,7 +154,7 @@ $LeerPasswdEmail = Read-Host -AsSecureString "Establecer la password del e-mail 
 ##############################
 
 #########################################
-## Inicio Recoger variables formulario ##
+## Inicio Recoger Variables Formulario ##
 
     $ValorBoxPathLocal = $BoxPathLocal.Text
     $ValorBoxPathRemotoFTP = $BoxPathRemotoFTP.Text
@@ -165,7 +165,7 @@ $LeerPasswdEmail = Read-Host -AsSecureString "Establecer la password del e-mail 
     $ValorBoxAsuntoEmail = $BoxAsuntoEmail.Text
     $ValorBoxCuerpoEmail = $BoxCuerpoEmail.Text
 
-## Fin Recoger variables formulario ##
+## Fin Recoger Variables Formulario ##
 ######################################
 
 #################################
