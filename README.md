@@ -24,18 +24,18 @@ https://myaccount.google.com/lesssecureapps
 > **backup.ps1**: establecer los valores deseados en las variables
 
 #### Paths
-- $pathLocalDatos = "pathLocalDatos"
-- $pathRemotoFTP = "pathRemotoFTP"
-- $pathTempFichero7z = "pathTemporalFichero7z"
+- $PathLocalDatos = "pathLocalDatos"
+- $PathRemotoFTP = "pathRemotoFTP"
+- $PathTempFichero7z = "pathTemporalFichero7z"
 
 #### Credenciales
-- $passwd7z = "passwdFichero7z"
-- $servidorFTP = "ftp.miweb.com"
-- $usuarioFTP = "usuarioFTP"
-- $passwdFTP = "passwdFTP"
-- $usuarioEmail = "usuarioEmail@gmail.com" 
-- $passwdEmail = "passwdEmail"
+- $Passwd7z = "passwdFichero7z"
+- $HostServidorFTP = "ftp.miweb.com"
+- $UsuarioFTP = "usuarioFTP"
+- $PasswdFTP = "passwdFTP"
+- $UsuarioEmail = "usuarioEmail@gmail.com" 
+- $PasswdEmail = "passwdEmail"
 
 #### Asunto y cuerpo del Email
-- $asuntoEmail = "asuntoEmail"
-- $cuerpoEmail = "textoCuerpoEmail"
+- $AsuntoEmail = "asuntoEmail"
+- $CuerpoEmail = "textoCuerpoEmail"
