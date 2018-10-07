@@ -135,7 +135,6 @@ $Formulario.ShowDialog()
 ## Fin Formulario ##
 ####################
 
-
 #################################
 ## Inicio Establecer Passwords ##
 
@@ -154,7 +153,6 @@ $LeerPasswdEmail = Read-Host -AsSecureString "Establecer la password del e-mail 
 ## Fin Establecer Passwords ##
 ##############################
 
-
 #########################################
 ## Inicio Recoger variables formulario ##
 
@@ -169,7 +167,6 @@ $LeerPasswdEmail = Read-Host -AsSecureString "Establecer la password del e-mail 
 
 ## Fin Recoger variables formulario ##
 ######################################
-
 
 #################################
 ## Inicio Establecer Variables ##
@@ -206,7 +203,6 @@ $LeerPasswdEmail = Read-Host -AsSecureString "Establecer la password del e-mail 
 
 ## Fin Establecer Varibles ##
 #############################
-
 
 # Comprobrar si ya existe algún fichero de log o backup anteriores
 if (Test-Path ($TestBackup7z, $TestBackupLog)) { 
