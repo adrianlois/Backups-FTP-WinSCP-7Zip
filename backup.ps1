@@ -13,7 +13,7 @@
     $TempFichero7z = "$PathtempFichero7z-$FechaActual.7z"
 # Credenciales
     $Passwd7z = "PasswdFichero7z"
-    $ServidorFTP = "ftp.miweb.com"
+    $HostServidorFTP = "ftp.miweb.com"
     $UsuarioFTP = "UsuarioFTP"
     $PasswdFTP = "PasswdFTP"
     $UsuarioEmail = "UsuarioEmail@gmail.com" 
@@ -43,7 +43,7 @@ Compress-7Zip -Path $pathLocalDatos -ArchiveFileName $TempFichero7z -Password $P
 
 ## Enviar backup al servidor FTP ##
     # Crear nueva sesión FTP
-    New-WinSCPSession -SessionOption (New-WinSCPSessionOption -HostName $ServidorFTP -Protocol Ftp -Credential $CredencialesFTP) -SessionLogPath $LogBackupFTP -DebugLogLevel 2
+    New-WinSCPSession -SessionOption (New-WinSCPSessionOption -HostName $HostServidorFTP -Protocol Ftp -Credential $CredencialesFTP) -SessionLogPath $LogBackupFTP -DebugLogLevel 2
     # Subir el fichero comprimido de datos al servidor FTP
     Send-WinSCPItem -LocalPath $TempFichero7z -RemotePath $PathRemotoFTP
     # Cerrar sesión FTP
