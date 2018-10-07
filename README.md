@@ -54,11 +54,11 @@ Establecer los valores deseados en las variables. Ideal para usarlo a través de
 
 Se solicitan los valores de passwords de forma interactiva sin almacenarlas en texto plano en el fichero .ps1. A diferencia de backup.ps1, no se guardarán las passwords en texto plano en el fichero .ps1.
 
-![backup-interactivo-passwords-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/backup-interactivo-passwords-7z-ftp-gmail.png)
+![backup-interactivo-passwords-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/backupv2-interactivo-passwords-7z-ftp-gmail.png)
 
 
 ### backup-v3.ps1: 
 
 Establecer los valores de todos los datos incluídas las passwords a través de un formulario de forma interactiva. Al igual que backup-v2.ps1, no se guardarán el resto de datos en el fichero .ps1.
 
-![datos_backup-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/datos_backup-7z-ftp-gmail.png)
+![datos_backup-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/backupv3-datos_passwords-7z-ftp-gmail.png)
