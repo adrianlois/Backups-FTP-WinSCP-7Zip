@@ -2,17 +2,6 @@
 # Autor @adrianlois_ #
 ######################
 
-## Inicio Prerequisitos ##
-# En caso necesario, descomentar las líneas 6, 9 y 10. O ejecutarlas a parte en Windows Powershell como Administrador.
-
-# Quitar restricciones de ejecución de scripts
-# Set-ExecutionPolicy Unrestricted -scope LocalMachine -Force
-
-# Instalación de módulos 7Zip4Powershell y WinSCP
-# Install-Module -Name 7Zip4Powershell -Verbose -Force
-# Install-Module -Name WinSCP -Verbose -Force
-## Fin Prerequisitos ##
-
 ## Inicio Variables ##
 # Fecha y hora
     $FechaActual = Get-Date -uformat "%d-%m-%Y"
