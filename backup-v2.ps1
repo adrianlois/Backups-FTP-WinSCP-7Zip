@@ -2,7 +2,7 @@
 # Autor @adrianlois_ #
 ######################
 # Backup PowerShell v2.0 #
-#########################
+##########################
 
 # Añadiendo las librerías para el formulario
 [void][System.reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
