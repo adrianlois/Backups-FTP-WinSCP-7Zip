@@ -10,7 +10,8 @@
     $PathLocalDatos = "PathLocalDatos"
     $PathRemotoFTP = "PathRemotoFTP"
     $PathTempFichero7z = "PathTemporalFichero7z"
-    $TempFichero7z = "$PathtempFichero7z-$FechaActual.7z"
+    $NombreBackupTemp = "Backup-"
+    $TempFichero7z = "$PathtempFichero7z$NombreBackupTemp$FechaActual.7z"
 # Credenciales
     $Passwd7z = "PasswdFichero7z"
     $HostServidorFTP = "ftp.miweb.com"
@@ -27,10 +28,10 @@
     $SecPasswdEmail = ConvertTo-SecureString $PasswdEmail -AsPlainText -Force
     $CredencialesEmail = New-Object System.Management.Automation.PSCredential ($UsuarioEmail, $SecPasswdEMail)
 # Log
-    $LogBackupFTP = "$PathtempFichero7z-$FechaActual.log"
+    $LogBackupFTP = "$PathtempFichero7z$NombreBackupTemp$FechaActual.log"
 # Comprobaciones Test-Path
-    $TestBackup7z = "$PathTempFichero7z*.7z"
-    $TestBackupLog = "$PathTempFichero7z*.log"
+    $TestBackup7z = "$PathTempFichero7z$NombreBackupTemp*.7z"
+    $TestBackupLog = "$PathTempFichero7z$NombreBackupTemp*.log"
 ## Fin Establecer Varibles ##
 
 # Comprobrar si ya existe algún fichero de log o backup anteriores
