@@ -1,7 +1,7 @@
 ######################
 # Autor @adrianlois_ #
 ######################
-# Backup PoweShellv2.0 #
+# Backup PowerShell v2.0 #
 #########################
 
 # Añadiendo las librerías para el formulario
