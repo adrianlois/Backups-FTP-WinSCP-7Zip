@@ -22,9 +22,9 @@
     $AsuntoEmail = "AsuntoEmail"
     $CuerpoEmail = "TextoCuerpoEmail"
 # Get-Credencial automatizado no interactivo, convertir a string segura
-    $SecPasswdFTP = ConvertTo-SecureString $passwdFTP -AsPlainText -Force
+    $SecPasswdFTP = ConvertTo-SecureString $PasswdFTP -AsPlainText -Force
     $CredencialesFTP = New-Object System.Management.Automation.PSCredential ($UsuarioFTP, $SecPasswdFTP)
-    $SecPasswdEmail = ConvertTo-SecureString $passwdEmail -AsPlainText -Force
+    $SecPasswdEmail = ConvertTo-SecureString $PasswdEmail -AsPlainText -Force
     $CredencialesEmail = New-Object System.Management.Automation.PSCredential ($UsuarioEmail, $SecPasswdEMail)
 # Log
     $LogBackupFTP = "$PathtempFichero7z-$FechaActual.log"
