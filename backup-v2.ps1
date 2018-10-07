@@ -1,7 +1,7 @@
 ######################
 # Autor @adrianlois_ #
 ######################
-# Backup PoweShell v2.0 #
+# Backup PoweShellv2.0 #
 #########################
 
 # Añadiendo las librerías para el formulario
