@@ -29,7 +29,7 @@ Es necesario instalar los módulos: WinSCP y Compress-7Zip
 ## Ficheros PowerShell Backup
 
 
-## -- Versiones automatizadas (no interactivas): v1.0, v2.0, v2.1
+## -- Versiones automatizadas (no interactivas): v1.0, v2.0, v2.1 --
 
 Estas versiones son pensadas para lanzar el script de backup de Powershell en una tarea programada de Windows.
 
@@ -103,7 +103,7 @@ Respecto a la versión 2.0, se añade la mejora de crear una clave de cifrado y 
 - $CuerpoEmail = "TextoCuerpoEmail"
 
 
-## -- Versiones interactivas: v3.0, v4.0
+## -- Versiones interactivas: v3.0, v4.0 --
 
 Estas versiones están pensadas para ejecutar el script de Powershell de forma manual, introducir los datos críticos y que no se almacenen ni en texto plano ni cifrados en el equipo local.
 
