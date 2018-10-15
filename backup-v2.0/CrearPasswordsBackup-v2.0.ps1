@@ -13,4 +13,7 @@ Read-Host -AsSecureString "Password servidor FTP" | ConvertFrom-SecureString | S
 Read-Host -AsSecureString "Password Email Gmail" | ConvertFrom-SecureString | Set-Content "$PathFicherosPasswd\passwd-email"
 
 ## Mostrar MessageBox de los paths donde se crearon los ficheros de passwords
-[System.Windows.MessageBox]::Show("Passwords generadas correctamente: `n`n$PathFicherosPasswd\passwd-7z `n$PathFicherosPasswd\passwd-ftp `n$PathFicherosPasswd\passwd-email","Passwords path")
+[System.Windows.MessageBox]::Show("Passwords generadas correctamente: 
+									`n`n$PathFicherosPasswd\passwd-7z 
+									`n$PathFicherosPasswd\passwd-ftp 
+									`n$PathFicherosPasswd\passwd-email","Passwords path")
