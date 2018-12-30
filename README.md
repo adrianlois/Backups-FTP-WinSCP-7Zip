@@ -57,7 +57,7 @@ Establecer los valores deseados en las variables. Ideal para usarlo a través de
 
 ### backup-v2.0:
 
-Las passwords se almacenan cifradas en ficheros separados. Está limitado a ejecutarse desde el mismo usuario y equipo que generó los ficheros de passwords.
+Las passwords se almacenan cifradas en ficheros separados. Está limitado a ejecutarse desde el mismo usuario y desde el mismo equipo que generó los ficheros de passwords.
 
 - **CrearPasswordsBackup-v2.0.ps1**: Nos solicita una ruta a un directorio para almacenas las passwords cifradas en un fichero. Solo es necesario ejecutarlo una primera vez. Si cambiamos de usuario, equipo o formateamos Windows estas claves ya no servirán y deberemos crear unas nuevas. En caso de usar las mismas password en diferentes equipos en la versión 2.1 se soluciona este inconveniente. 
 
