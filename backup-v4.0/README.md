@@ -6,7 +6,7 @@ Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ft
 ▶ **Video demo (PoC)**: https://youtu.be/R8tstuRbMto
 <p align="center">
 <a href="https://youtu.be/R8tstuRbMto" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/powershell-ftp-backup-v4.0-videodemo.png" 
-alt="powershell-ftp-backup-v4.0-videodemo-adrianlois" width="650" target="_blank"/></a>
+alt="powershell-ftp-backup-v4.0-videodemo-adrianlois" width="650" /></a>
 </p>
 
 ### backup-v4.0.ps1: 
