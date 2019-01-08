@@ -89,6 +89,12 @@ alt="powershell-ftp-cifrado-passwords-backup-v2.0-videodemo" width="650" /></a>
 
 Respecto a la versión 2.0, se añade la mejora de crear una clave de cifrado y descifrado de las passwords establecidas. De ese modo con el fichero generado automáticamente cifrado.key y los ficheros cifrados de las password establecidas, de ese modo se podrá ejecutar desde otros usuarios y en otros equipos.
 
+▶ **Video demo (PoC)**: https://youtu.be/0iSXvSB15PI
+<p align="center">
+<a href="https://youtu.be/0iSXvSB15PI" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo.png" 
+alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650" /></a>
+</p>
+
 - **CrearPasswordsBackup-v2.1.ps1**: Genera un fichero único "cifrado.key", este será el fichero llave para cifrar y descifrar el resto de ficheros donde se establecieron las passwords.
 
 - **backup-v2.1.ps1**: Modificar los valores de las siguientes variables: (igual que la versión 2.0)
