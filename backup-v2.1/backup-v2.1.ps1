@@ -18,7 +18,7 @@
     $NombreBackupTemp = "Backup_"
     $TempFichero7z = "$PathtempFichero7z$NombreBackupTemp$FechaActual.7z"
 # Credenciales
-    $Passwd7z = Get-Content "$PathFicherosPasswd\passwd-7z" | ConvertTo-SecureString -Key (Get-Content "$PathFicherosPasswd\cifradoKeyFile.key")
+    $Passwd7z = Get-Content "$PathFicherosPasswd\passwd-7z" | ConvertTo-SecureString -Key (Get-Content "$PathFicherosPasswd\CifradoKeyFile.key")
     $HostServidorFTP = "HostServidorFTP"
     $UsuarioFTP = "UsuarioFTP"
     $PasswdFTP = "passwd-ftp"
@@ -28,9 +28,9 @@
     $AsuntoEmail = "AsuntoEmail"
     $CuerpoEmail = "CuerpoEmail"
 # Convertir a string segura, obtención de password desde los ficheros cifrados
-    $SecPasswdFTP = Get-Content "$PathFicherosPasswd\$PasswdFTP" | ConvertTo-SecureString -Key (Get-Content "$PathFicherosPasswd\cifradoKeyFile.key")
+    $SecPasswdFTP = Get-Content "$PathFicherosPasswd\$PasswdFTP" | ConvertTo-SecureString -Key (Get-Content "$PathFicherosPasswd\CifradoKeyFile.key")
     $CredencialesFTP = New-Object System.Management.Automation.PsCredential($UsuarioFTP,$SecPasswdFTP)
-    $SecPasswdEmail = Get-Content "$PathFicherosPasswd\$PasswdEmail" | ConvertTo-SecureString -Key (Get-Content "$PathFicherosPasswd\cifradoKeyFile.key")
+    $SecPasswdEmail = Get-Content "$PathFicherosPasswd\$PasswdEmail" | ConvertTo-SecureString -Key (Get-Content "$PathFicherosPasswd\CifradoKeyFile.key")
     $CredencialesEmail = New-Object System.Management.Automation.PSCredential ($UsuarioEmail, $SecPasswdEmail)
 # Log
     $LogBackupFTP = "$PathtempFichero7z$NombreBackupTemp$FechaActual.log"
@@ -58,7 +58,7 @@ Compress-7Zip -Path $pathLocalDatos -ArchiveFileName $TempFichero7z -Password $P
     # Cerrar sesión FTP
     Remove-WinSCPSession
 
-## Enviar log de backup ví­a email Gmail ##
+## Enviar log de backup vía email Gmail ##
 Send-MailMessage -From $UsuarioEmail -To $UsuarioEmail -Subject "$AsuntoEmail - $FechaHoraActual" -Body "$CuerpoEmail - $FechaHoraActual" -Attachments $LogBackupFTP -SmtpServer smtp.gmail.com -UseSsl -Credential $CredencialesEmail
 
 ## Eliminar logs ##
