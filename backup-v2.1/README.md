@@ -9,7 +9,7 @@ Respecto a la versión 2.0, se añade la mejora de crear una clave de cifrado y 
 
 ▶ **Video demo (PoC)**: https://youtu.be/0iSXvSB15PI
 <p align="center">
-<a href="https://youtu.be/0iSXvSB15PI" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo.png" 
+<a href="https://youtu.be/0iSXvSB15PI" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-backup-cifrado-passwords-keyfile-v2.1-videodemo.png" 
 alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650" /></a>
 </p>
 
