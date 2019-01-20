@@ -14,6 +14,7 @@ alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650"
 </p>
 
 - **CrearPasswordsBackup-v2.1.ps1**: Genera un fichero único "cifrado.key", este será el fichero llave para cifrar y descifrar el resto de ficheros donde se establecieron las passwords. *(El fichero cifrado.key se le pasará al script backup-v2.1.ps1 para que pueda descifrar las passwords cifradas desde cualquier usuario del mismo equipo u otro equipo diferente).*
+https://www.zonasystem.com/2019/01/cifrar-passwords-con-powershell.html
 
 - **backup-v2.1.ps1**: Modificar los valores de las siguientes variables: (igual que la versión 2.0)
 
