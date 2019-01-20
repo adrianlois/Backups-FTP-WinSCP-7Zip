@@ -14,11 +14,11 @@ Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ft
 ### Envío log cuenta Gmail (Google)
 Para el envío del log vía Gmail es necesario activar el acceso a "Aplicaciones menos seguras" en la cuenta Google. 
 https://myaccount.google.com/lesssecureapps
+<p align="center">
+![ejecucion_app_menos_seguras_gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/ejecucion_app_menos_seguras_gmail.png)
 
-![ejecucion_app_menos_seguras_gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTPES-Batchfile/master/screenshots-test/ejecucion_app_menos_seguras_gmail.png)
-
-![email_backup_log_enviado_gmail_powershel](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/email_envio_backup_log_gmail_powershell.png)
-
+![email_backup_log_enviado_gmail_powershel](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/email_envio_backup_log_gmail_powershell.png)
+</p>
 
 ### instalar-modulos.ps1:
 
@@ -124,18 +124,18 @@ Estas versiones están pensadas para ejecutar el script de Powershell de forma m
 
 Se solicitan los valores de passwords de forma interactiva sin almacenarlas en texto plano en el fichero .ps1. A diferencia de backup.ps1, no se guardarán las passwords en texto plano en el fichero .ps1.
 
-![backup-interactivo-passwords-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/backupv2-interactivo-passwords-7z-ftp-gmail.png)
+![backup-interactivo-passwords-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/backupv2-interactivo-passwords-7z-ftp-gmail.png)
 
 
 ## ▶ backup-v4.0.ps1: 
 
 Establecer los valores de todos los datos incluídas las passwords a través de un formulario de forma interactiva. Al igual que backup-v2.ps1, no se guardarán el resto de datos en el fichero .ps1.
 
-![datos_backup-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/backupv3-datos_passwords-7z-ftp-gmail.png)
+![datos_backup-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/backupv3-datos_passwords-7z-ftp-gmail.png)
 
 
 **Video demo (PoC)**: https://youtu.be/R8tstuRbMto
 <p align="center">
-<a href="https://youtu.be/R8tstuRbMto" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/powershell-ftp-backup-v4.0-videodemo.png" 
+<a href="https://youtu.be/R8tstuRbMto" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-backup-v4.0-videodemo.png" 
 alt="powershell-ftp-backup-v4.0-videodemo-adrianlois" width="650" /></a>
 </p>
