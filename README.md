@@ -14,11 +14,11 @@ Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ft
 ### Envío log cuenta Gmail (Google)
 Para el envío del log vía Gmail es necesario activar el acceso a "Aplicaciones menos seguras" en la cuenta Google. 
 https://myaccount.google.com/lesssecureapps
-<p align="center">
+
 ![email_backup_log_enviado_gmail_powershel](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/ejecucion_app_menos_seguras_gmail.png)
 
 ![email_backup_log_enviado_gmail_powershel](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/email_envio_backup_log_gmail_powershell.png)
-</p>
+
 
 ### instalar-modulos.ps1:
 
