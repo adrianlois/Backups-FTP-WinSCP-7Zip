@@ -9,7 +9,7 @@ Las passwords se almacenan cifradas en ficheros separados. Está limitado a ejec
 
 ▶ **Video demo (PoC)**: https://youtu.be/YGRDsgpRlS0
 <p align="center">
-<a href="https://youtu.be/YGRDsgpRlS0" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo.png" 
+<a href="https://youtu.be/YGRDsgpRlS0" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-cifrado-passwords-backup-v2.0-videodemo.png" 
 alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650" /></a>
 </p>
 
