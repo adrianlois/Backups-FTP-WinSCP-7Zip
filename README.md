@@ -59,13 +59,13 @@ Establecer los valores deseados en las variables. Ideal para usarlo a través de
 
 Las passwords se almacenan cifradas en ficheros separados. Está limitado a ejecutarse desde el mismo usuario y desde el mismo equipo que generó los ficheros de passwords.
 
-- **CrearPasswordsBackup-v2.0.ps1**: Nos solicita una ruta a un directorio para almacenas las passwords cifradas en un fichero. Solo es necesario ejecutarlo una primera vez. Si cambiamos de usuario, equipo o formateamos Windows estas claves ya no servirán y deberemos crear unas nuevas. En caso de usar las mismas password en diferentes equipos en la versión 2.1 se soluciona este inconveniente. 
+- **CrearPasswordsBackup-v2.0.ps1**: Nos solicita una ruta a un directorio para almacenas las passwords cifradas en un fichero. Solo es necesario ejecutarlo una primera vez. Si cambiamos de usuario, equipo o formateamos Windows estas claves ya no servirán y deberemos crear unas nuevas. En caso de usar las mismas password en diferentes equipos en la versión 2.1 se soluciona este inconveniente. *(https://www.zonasystem.com/2019/01/cifrar-passwords-con-powershell.html)*
 
 - **backup-v2.0.ps1**: Modificar los valores de las siguientes variables:
 
 **Video demo (PoC)**: https://youtu.be/YGRDsgpRlS0
 <p align="center">
-<a href="https://youtu.be/YGRDsgpRlS0" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots-test/powershell-ftp-cifrado-passwords-backup-v2.0-videodemo.png" 
+<a href="https://youtu.be/YGRDsgpRlS0" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-cifrado-passwords-backup-v2.0-videodemo.png" 
 alt="powershell-ftp-cifrado-passwords-backup-v2.0-videodemo" width="650" /></a>
 </p>
 
@@ -91,11 +91,11 @@ Respecto a la versión 2.0, se añade la mejora de crear una clave de cifrado y 
 
 ▶ **Video demo (PoC)**: https://youtu.be/0iSXvSB15PI
 <p align="center">
-<a href="https://youtu.be/0iSXvSB15PI" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo.png" 
+<a href="https://youtu.be/0iSXvSB15PI" target="_blank"><img src="https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/powershell-ftp-backup-cifrado-passwords-keyfile-v2.1-videodemo.png" 
 alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650" /></a>
 </p>
 
-- **CrearPasswordsBackup-v2.1.ps1**: Genera un fichero único "cifrado.key", este será el fichero llave para cifrar y descifrar el resto de ficheros donde se establecieron las passwords.
+- **CrearPasswordsBackup-v2.1.ps1**:  Genera un fichero único "cifrado.key", este será el fichero llave para cifrar y descifrar el resto de ficheros donde se establecieron las passwords. *(El fichero cifrado.key se le pasará al script backup-v2.1.ps1 para que pueda descifrar las passwords cifradas desde cualquier usuario del mismo equipo u otro equipo diferente).* *(https://www.zonasystem.com/2019/01/cifrar-passwords-con-powershell.html)*
 
 - **backup-v2.1.ps1**: Modificar los valores de las siguientes variables: (igual que la versión 2.0)
 
