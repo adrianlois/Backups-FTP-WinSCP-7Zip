@@ -54,7 +54,7 @@ Compress-7Zip -Path $pathLocalDatos -ArchiveFileName $TempFichero7z -Password $P
     # Crear nueva sesión FTP
     New-WinSCPSession -SessionOption (New-WinSCPSessionOption -HostName $HostServidorFTP -Protocol Ftp -Credential $CredencialesFTP) -SessionLogPath $LogBackupFTP -DebugLogLevel 2
     # Eliminar el viejo fichero comprimido de datos del servidor FTP
-    Remove-WinSCPItem -Path $PathRemotoFTP/Backup*.zip
+    Remove-WinSCPItem -Path $PathRemotoFTP/Backup*.7z
     # Subir el nuevo fichero comprimido de datos al servidor FTP
     Send-WinSCPItem -LocalPath $TempFichero7z -RemotePath $PathRemotoFTP
     # Cerrar sesión FTP
