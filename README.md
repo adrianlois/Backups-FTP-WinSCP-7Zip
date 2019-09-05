@@ -17,7 +17,7 @@ https://myaccount.google.com/lesssecureapps
 
 ![email_backup_log_enviado_gmail_powershel](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/ejecucion_app_menos_seguras_gmail.png)
 
-![email_backup_log_enviado_gmail_powershel](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/envio_email_backup_log_gmail_powershell.png)
+![email_backup_log_enviado_gmail_powershel](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/email_envio_backup_log_gmail_powershell.png)
 
 
 ### instalar-modulos.ps1:
