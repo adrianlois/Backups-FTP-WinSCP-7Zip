@@ -69,5 +69,11 @@ Remove-Item -Path $TempFichero7z -Recurse -Force
 # En el caso de querer eliminar también el log de backup, descomentar la siguiente lí­nea
 # Remove-Item -Path $logBackupFTP -Recurse -Force
 
+# Liberar los valores de passwords de los objetos SecureString almacenados en memoria (esta memoria se encuentra en una zona distinta donde no accede el recolector de basura)
+$ptr1 = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($SecPasswdEmail)
+[System.Runtime.InteropServices.Marshal]::ZeroFreeCoTaskMemUnicode($ptr1)
+$ptr2 = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($SecPasswdFTP)
+[System.Runtime.InteropServices.Marshal]::ZeroFreeCoTaskMemUnicode($ptr2)
+
 # Salir
 exit
