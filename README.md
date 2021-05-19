@@ -1,4 +1,4 @@
-# Backup FTP WinSCP y 7Zip - PowerShell
+# Backups FTP WinSCP y 7Zip - PowerShell
 PowerShell - Automatizar Backups FTP con WinSCP y Compress-7Zip (2018)
 
 Más info: https://www.zonasystem.com/2017/07/automatizar-copias-de-seguridad-ftps-winscp-taskschd.html
