@@ -113,11 +113,9 @@ alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650"
 - $AsuntoEmail = "AsuntoEmail"
 - $CuerpoEmail = "TextoCuerpoEmail"
 
-
 ## Versiones interactivas: v3.0, v4.0
 
 Estas versiones están pensadas para ejecutar el script de Powershell de forma manual, introducir los datos críticos y que no se almacenen ni en texto plano ni cifrados en el equipo local.
-
 
 ## ▶ backup-v3.0.ps1:
 
@@ -125,13 +123,11 @@ Se solicitan los valores de passwords de forma interactiva sin almacenarlas en t
 
 ![backup-interactivo-passwords-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/backupv2-interactivo-passwords-7z-ftp-gmail.png)
 
-
 ## ▶ backup-v4.0.ps1: 
 
 Establecer los valores de todos los datos incluídas las passwords a través de un formulario de forma interactiva. Al igual que backup-v2.ps1, no se guardarán el resto de datos en el fichero .ps1.
 
 ![datos_backup-7z-ftp-gmail](https://raw.githubusercontent.com/adrianlois/Automatizar-Backups-FTP-PowerShell/master/screenshots/backupv3-datos_passwords-7z-ftp-gmail.png)
-
 
 **Video demo (PoC)**: https://youtu.be/R8tstuRbMto
 <p align="center">
