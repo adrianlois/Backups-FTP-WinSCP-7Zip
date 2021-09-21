@@ -115,7 +115,7 @@ alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650"
 - $CuerpoEmail = "TextoCuerpoEmail"
 
 
-## -- Versiones interactivas: v3.0, v4.0 --
+## Versiones interactivas: v3.0, v4.0
 
 Estas versiones están pensadas para ejecutar el script de Powershell de forma manual, introducir los datos críticos y que no se almacenen ni en texto plano ni cifrados en el equipo local.
 
