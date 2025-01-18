@@ -47,7 +47,7 @@ Establecer los valores deseados en las variables. Ideal para usarlo a través de
 - $HostServidorFTP = "ftp.miweb.com"
 - $UsuarioFTP = "UsuarioFTP"
 - $PasswdFTP = "PasswdFTP"
-- $UsuarioEmail = "UsuarioEmail@gmail.com" 
+- $UsuarioEmail = "Usuario@gmail.com" 
 - $PasswdEmail = "PasswdEmail"
 
 #### Asunto y cuerpo del Email
@@ -77,7 +77,7 @@ alt="powershell-ftp-cifrado-passwords-backup-v2.0-videodemo" width="650" /></a>
 #### Credenciales
 - $HostServidorFTP = "ftp.miweb.com"
 - $UsuarioFTP = "UsuarioFTP"
-- $UsuarioEmail = "UsuarioEmail@gmail.com" 
+- $UsuarioEmail = "Usuario@gmail.com" 
 
 #### Asunto y cuerpo del Email
 - $AsuntoEmail = "AsuntoEmail"
@@ -107,7 +107,7 @@ alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650"
 #### Credenciales
 - $HostServidorFTP = "ftp.miweb.com"
 - $UsuarioFTP = "UsuarioFTP"
-- $UsuarioEmail = "UsuarioEmail@gmail.com" 
+- $UsuarioEmail = "Usuario@gmail.com" 
 
 #### Asunto y cuerpo del Email
 - $AsuntoEmail = "AsuntoEmail"

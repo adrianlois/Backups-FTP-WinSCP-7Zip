@@ -39,7 +39,7 @@ $LeerPasswdEmail = Read-Host -AsSecureString "Establecer la password del e-mail 
     $HostServidorFTP = "HostServidorFTP"
     $UsuarioFTP = "UsuarioFTP"
     $PasswdFTP = "$PlainPasswdFTP"
-    $UsuarioEmail = "UsuarioEmail@gmail.com" 
+    $UsuarioEmail = "Usuario@gmail.com" 
     $PasswdEmail = "$PlainPasswdEmail"
 # Asunto y cuerpo del Email
     $AsuntoEmail = "AsuntoEmail"

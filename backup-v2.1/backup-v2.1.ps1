@@ -22,7 +22,7 @@
     $HostServidorFTP = "HostServidorFTP"
     $UsuarioFTP = "UsuarioFTP"
     $PasswdFTP = "passwd-ftp"
-    $UsuarioEmail = "UsuarioEmail@gmail.com" 
+    $UsuarioEmail = "Usuario@gmail.com" 
     $PasswdEmail = "passwd-email"
 # Asunto y cuerpo del Email
     $AsuntoEmail = "AsuntoEmail"

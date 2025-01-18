@@ -17,7 +17,7 @@ Establecer los valores deseados en las variables. Ideal para usarlo a través de
 - $HostServidorFTP = "ftp.miweb.com"
 - $UsuarioFTP = "UsuarioFTP"
 - $PasswdFTP = "PasswdFTP"
-- $UsuarioEmail = "UsuarioEmail@gmail.com" 
+- $UsuarioEmail = "Usuario@gmail.com" 
 - $PasswdEmail = "PasswdEmail"
 
 #### Asunto y cuerpo del Email

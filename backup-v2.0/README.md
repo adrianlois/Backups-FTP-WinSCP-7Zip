@@ -27,7 +27,7 @@ alt="powershell-ftp-cifrado-passwords-keyfile-backup-v2.1-videodemo" width="650"
 #### Credenciales
 - $HostServidorFTP = "ftp.miweb.com"
 - $UsuarioFTP = "UsuarioFTP"
-- $UsuarioEmail = "UsuarioEmail@gmail.com" 
+- $UsuarioEmail = "Usuario@gmail.com" 
 
 #### Asunto y cuerpo del Email
 - $AsuntoEmail = "AsuntoEmail"
