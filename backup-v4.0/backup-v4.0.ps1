@@ -1,6 +1,4 @@
-﻿######################
-# Autor @adrianlois_ #
-######################
+﻿##########################
 # Backup PowerShell v4.0 #
 ##########################
 
@@ -23,96 +21,96 @@ $LabelPathFLocal = New-Object System.Windows.Forms.Label
     $LabelPathFLocal.Location = New-Object System.Drawing.Size(30,20) 
     $LabelPathFLocal.Size = New-Object System.Drawing.Size(260,20) 
     $LabelPathFLocal.Text = "Ruta de los ficheros locales (ej: C:\Mis archivos):"
-        $Formulario.Controls.Add($LabelPathFLocal)
+    $Formulario.Controls.Add($LabelPathFLocal)
 $BoxPathLocal = New-Object System.Windows.Forms.Textbox
     $BoxPathLocal.Location = New-Object System.Drawing.point(30,40)
     $BoxPathLocal.Size = New-Object System.Drawing.Size(260,20)
     $BoxPathLocal.Text = ''
-        $Formulario.Controls.Add($BoxPathLocal)
+    $Formulario.Controls.Add($BoxPathLocal)
 
 # Path donde remoto servidor FTP
 $LabelPathRemotoFTP = New-Object System.Windows.Forms.Label
     $LabelPathRemotoFTP.Location = New-Object System.Drawing.Size(30,70) 
     $LabelPathRemotoFTP.Size = New-Object System.Drawing.Size(260,20) 
     $LabelPathRemotoFTP.Text = "Ruta del servidor remoto FTP (ej: /backup):"
-        $Formulario.Controls.Add($LabelPathRemotoFTP)
+    $Formulario.Controls.Add($LabelPathRemotoFTP)
 $BoxPathRemotoFTP = New-Object System.Windows.Forms.Textbox
     $BoxPathRemotoFTP.Location = New-Object System.Drawing.point(30,90)
     $BoxPathRemotoFTP.Size = New-Object System.Drawing.Size(260,20)
     $BoxPathRemotoFTP.Text = ''
-        $Formulario.Controls.Add($BoxPathRemotoFTP)
+    $Formulario.Controls.Add($BoxPathRemotoFTP)
 
 # Path fichero temporal comprimido 7zip
 $LabelPathFichero7z = New-Object System.Windows.Forms.Label
     $LabelPathFichero7z.Location = New-Object System.Drawing.Size(30,120) 
     $LabelPathFichero7z.Size = New-Object System.Drawing.Size(260,20) 
     $LabelPathFichero7z.Text = "Ruta del fichero temporal comprimido 7zip (ej: D:\):"
-        $Formulario.Controls.Add($LabelPathFichero7z)
+    $Formulario.Controls.Add($LabelPathFichero7z)
 $BoxPathFichero7z = New-Object System.Windows.Forms.Textbox
     $BoxPathFichero7z.Location = New-Object System.Drawing.point(30,140)
     $BoxPathFichero7z.Size = New-Object System.Drawing.Size(260,20)
     $BoxPathFichero7z.Text = ''
-        $Formulario.Controls.Add($BoxPathFichero7z)
+    $Formulario.Controls.Add($BoxPathFichero7z)
 
 # Host del servidor FTP
 $LabelHostServidorFTP = New-Object System.Windows.Forms.Label
     $LabelHostServidorFTP.Location = New-Object System.Drawing.Size(30,170) 
     $LabelHostServidorFTP.Size = New-Object System.Drawing.Size(260,20) 
     $LabelHostServidorFTP.Text = "Host servidor FTP (ej: ftp.misitio.com):"
-        $Formulario.Controls.Add($LabelHostServidorFTP)
+    $Formulario.Controls.Add($LabelHostServidorFTP)
 $BoxHostServidorFTP = New-Object System.Windows.Forms.Textbox
     $BoxHostServidorFTP.Location = New-Object System.Drawing.point(30,190)
     $BoxHostServidorFTP.Size = New-Object System.Drawing.Size(260,20)
     $BoxHostServidorFTP.Text = ''
-        $Formulario.Controls.Add($BoxHostServidorFTP)
+    $Formulario.Controls.Add($BoxHostServidorFTP)
 
 # Usuario servidor FTP
 $LabelUsuarioFTP = New-Object System.Windows.Forms.Label
     $LabelUsuarioFTP.Location = New-Object System.Drawing.Size(30,220) 
     $LabelUsuarioFTP.Size = New-Object System.Drawing.Size(260,20) 
     $LabelUsuarioFTP.Text = "Usuario servidor FTP:"
-        $Formulario.Controls.Add($LabelUsuarioFTP)
+    $Formulario.Controls.Add($LabelUsuarioFTP)
 $BoxUsuarioFTP = New-Object System.Windows.Forms.Textbox
     $BoxUsuarioFTP.Location = New-Object System.Drawing.point(30,240)
     $BoxUsuarioFTP.Size = New-Object System.Drawing.Size(260,20)
     $BoxUsuarioFTP.Text = ''
-        $formulario.Controls.Add($BoxUsuarioFTP)
+    $formulario.Controls.Add($BoxUsuarioFTP)
 
 # Usuario e-mail Gmail
 $LabelUsuarioEmail = New-Object System.Windows.Forms.Label
     $LabelUsuarioEmail.Location = New-Object System.Drawing.Size(30,270) 
     $LabelUsuarioEmail.Size = New-Object System.Drawing.Size(260,20) 
     $LabelUsuarioEmail.Text = "Usuario e-mail Gmail (sin @gmail.com):"
-        $Formulario.Controls.Add($LabelUsuarioEmail)
+    $Formulario.Controls.Add($LabelUsuarioEmail)
 $BoxUsuarioEmail = New-Object System.Windows.Forms.Textbox
     $BoxUsuarioEmail.Location = New-Object System.Drawing.point(30,290)
     $BoxUsuarioEmail.Size = New-Object System.Drawing.Size(260,20)
     $BoxUsuarioEmail.Text = ''
-        $Formulario.Controls.Add($BoxUsuarioEmail)
+    $Formulario.Controls.Add($BoxUsuarioEmail)
 
 # Asunto del mensaje e-mail Gmail
 $LabelAsuntoEmail = New-Object System.Windows.Forms.Label
     $LabelAsuntoEmail.Location = New-Object System.Drawing.Size(30,320) 
     $LabelAsuntoEmail.Size = New-Object System.Drawing.Size(260,20) 
     $LabelAsuntoEmail.Text = "Asunto del e-mail Gmail:"
-        $Formulario.Controls.Add($LabelAsuntoEmail)
+    $Formulario.Controls.Add($LabelAsuntoEmail)
 $BoxAsuntoEmail = New-Object System.Windows.Forms.Textbox
     $BoxAsuntoEmail.Location = New-Object System.Drawing.point(30,340)
     $BoxAsuntoEmail.Size = New-Object System.Drawing.Size(260,20)
     $BoxAsuntoEmail.Text = ''
-        $Formulario.Controls.Add($BoxAsuntoEmail)
+    $Formulario.Controls.Add($BoxAsuntoEmail)
 
 # Cuerpo del mensaje e-mail Gmail
 $LabelCuerpoEmail = New-Object System.Windows.Forms.Label
     $LabelCuerpoEmail.Location = New-Object System.Drawing.Size(30,370) 
     $LabelCuerpoEmail.Size = New-Object System.Drawing.Size(260,20) 
     $LabelCuerpoEmail.Text = "Cuerpo del e-mail Gmail:"
-        $Formulario.Controls.Add($LabelCuerpoEmail)
+    $Formulario.Controls.Add($LabelCuerpoEmail)
 $BoxCuerpoEmail = New-Object System.Windows.Forms.Textbox
     $BoxCuerpoEmail.Location = New-Object System.Drawing.point(30,390)
     $BoxCuerpoEmail.Size = New-Object System.Drawing.Size(260,20)
     $BoxCuerpoEmail.Text = ''
-        $Formulario.Controls.Add($BoxCuerpoEmail)
+    $Formulario.Controls.Add($BoxCuerpoEmail)
 
 # Botón para establecer las passwords
 $BotonPasswd = New-Object System.Windows.Forms.Button
@@ -120,14 +118,7 @@ $BotonPasswd = New-Object System.Windows.Forms.Button
     $BotonPasswd.Location = New-Object System.Drawing.point(95,430)
     $BotonPasswd.Size = New-Object System.Drawing.Size(140,35)
     $BotonPasswd.Add_Click({$formulario.Close()})
-        $Formulario.Controls.Add($BotonPasswd)
-
-# Label del Autor
-$LabelAutor = New-Object System.Windows.Forms.Label
-    $LabelAutor.Location = New-Object System.Drawing.Size(210,480) 
-    $LabelAutor.Size = New-Object System.Drawing.Size(205,20) 
-    $LabelAutor.Text = "by @adrianlois_"
-        $Formulario.Controls.Add($LabelAutor)
+    $Formulario.Controls.Add($BotonPasswd)
 
 ## Fin Labels, TextAreas y Buttons ##
 

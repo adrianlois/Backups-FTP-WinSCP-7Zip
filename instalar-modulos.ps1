@@ -1,7 +1,3 @@
-######################
-# Autor @adrianlois_ #
-######################
-
 # Deshabilitar restricciones de ejecución de scripts
 Set-ExecutionPolicy Unrestricted -scope LocalMachine -Force
 
