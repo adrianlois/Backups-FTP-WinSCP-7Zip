@@ -6,8 +6,8 @@
 ## Inicio Establecer Variables ##
 
 # Fecha y hora
-    $FechaActual = Get-Date -uformat "%d-%m-%Y"
-    $FechaHoraActual = Get-Date -uformat "%d/%m/%Y - %H:%M:%S"
+    $FechaActual = Get-Date -Format "dd-MM-yyyy"
+    $FechaHoraActual = Get-Date -Format "dd-MM-yyyy - HH:mm:ss"
 # Paths
     $PathLocalDatos = "PathLocalDatos"
     $PathRemotoFTP = "PathRemotoFTP"
